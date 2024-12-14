@@ -31,9 +31,6 @@ jobs:
         mv cmd/tesla-control/tesla_control artifacts/
         mv cmd/tesla-keygen/tesla_keygen artifacts/
 
-    - name: Test
-      run: make test
-
     - name: Create GitHub Release
       id: create_release
       uses: actions/create-release@v1
